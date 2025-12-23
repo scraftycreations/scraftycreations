@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrafty Creations | Shop Stationery & Gifts</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Amazon Color Palette */
+        :root {
+            --amz-navy: #131921;
+            --amz-light-navy: #232f3e;
+            --amz-yellow: #febd69;
+            --amz-bg: #eaeded;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        
+        /* Make the whole page look clickable */
+        body { background-color: var(--amz-bg); cursor: pointer; }
+
+        /* Global link wrapper to make whole page clickable */
+        .global-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: var(--amz-navy);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--amz-yellow);
+        }
+
+        .search-box {
+            flex-grow: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-btn {
+            background-color: var(--amz-yellow);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Instagram & Hand Sign Style */
+        .insta-header {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
+
+        .hand-anim {
+            font-size: 22px;
+            color: var(--amz-yellow);
+            margin-right: 10px;
+            animation: point 0.6s infinite alternate;
+        }
+
+        @keyframes point {
+            from { transform: translateX(0); }
+            to { transform: translateX(6px); }
+        }
+
+        .ig-icon {
+            font-size: 32px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- CONTENT --- */
+        .hero {
+            height: 300px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), var(--amz-bg)), 
+                        url('https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid {
+            max-width: 1400px;
+            margin: -100px auto 50px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card h2 { font-size: 21px; margin-bottom: 15px; }
+        .card img { width: 100%; height: 250px; object-fit: cover; margin-bottom: 15px; }
+        .card .link-text { color: #007185; font-weight: bold; font-size: 14px; }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--amz-light-navy);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 5px solid var(--amz-gold);
+        }
+
+        .footer-ig {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body title="go to my instagram">
+
+    <!-- THE GLOBAL LINK: EVERYTHING LEADS TO INSTAGRAM -->
+    <a href="https://www.instagram.com/scraftycreations_giftsstationa?igsh=OXdhN3EybDRoY2l4" target="_blank" class="global-link">
+        
+        <header>
+            <div class="nav-logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search Scrafty Creations...">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+
+            <div class="insta-header">
+                <i class="fas fa-hand-point-right hand-anim"></i>
+                <i class="fab fa-instagram ig-icon"></i>
+                <div style="margin-left: 10px;">
+                    <span style="font-size: 11px; display: block; color: #ccc;">Follow on</span>
+                    <strong>Instagram</strong>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero"></div>
+
+        <div class="grid">
+            <!-- FRIDGE HOLDERS -->
+            <div class="card">
+                <h2>Fridge Holders</h2>
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500" alt="Fridge Holders">
+                <span class="link-text">Shop on Instagram</span>
+            </div>
+
+            <!-- WATER BOTTLES -->
+            <div class="card">
+                <h2>Water Bottles</h2>
+                <img src="https://images.unsplash.com/photo-1602143307185-8a1555d3782d?w=500" alt="Bottles">
+                <span class="link-text">Explore Collection</span>
+            </div>
+
+            <!-- WALL HANGINGS -->
+            <div class="card">
+                <h2>Wall Hangings</h2>
+                <img src="https://images.unsplash.com/photo-1522758971460-1d21eed7dc1d?w=500" alt="Wall Art">
+                <span class="link-text">Decorate your home</span>
+            </div>
+
+            <!-- RETURN GIFTS -->
+            <div class="card">
+                <h2>Return Gifts</h2>
+                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500" alt="Gifts">
+                <span class="link-text">Bulk Orders</span>
+            </div>
+
+            <!-- STATIONERY -->
+            <div class="card">
+                <h2>Fancy Stationery</h2>
+                <img src="https://images.unsplash.com/photo-1586075010620-2255bc912443?w=500" alt="Stationery">
+                <span class="link-text">See Journals & Pens</span>
+            </div>
+            
+            <!-- BAGS (This specific card leads to your Bags highlight) -->
+            <div class="card" onclick="event.stopPropagation(); window.open('https://www.instagram.com/stories/highlights/18091162621626202/', '_blank');">
+                <h2>Designer Bags</h2>
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500" alt="Bags">
+                <span class="link-text">See Bags Highlight</span>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-ig">
+                <i class="fas fa-hand-point-down hand-anim" style="transform: rotate(0); margin-bottom: 10px; font-size: 30px;"></i>
+                <i class="fab fa-instagram ig-icon" style="font-size: 50px;"></i>
+                <h3 style="margin-top: 10px;">@scraftycreations_giftsstationa</h3>
+            </div>
+            <p>© 2025 Scrafty Creations | Click anywhere to visit our page</p>
+            <p style="color: var(--amz-yellow); margin-top: 10px;">Call: 9361671778</p>
+        </footer>
+
+    </a> <!-- End of Global Link -->
+
+</body>
+</html>
